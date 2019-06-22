@@ -1,0 +1,25 @@
+{
+    "name": "retas/branch",
+    "description": "",
+    "authors": [
+        {
+            "name": "Muhamad Ridwan Fauzan",
+            "email": "rymetutor@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Branch\\Providers\\BranchServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Branch\\": ""
+        }
+    }
+}

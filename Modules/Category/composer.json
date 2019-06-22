@@ -1,0 +1,25 @@
+{
+    "name": "retas/category",
+    "description": "",
+    "authors": [
+        {
+            "name": "Muhamad Ridwan Fauzan",
+            "email": "rymetutor@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Category\\Providers\\CategoryServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Category\\": ""
+        }
+    }
+}
