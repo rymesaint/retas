@@ -1,7 +1,7 @@
 # Retail Tasik Application (ReTas)
 RetAs is an application for food retail which is easy to use. And for those who will having multiple branch, the owner can setup the menu separately from other branch and automatically setting up the price using default price on the menu or just multiplied by the branch tax that u defined it.
 
-#Feature
+# Module Feature
 - Login Authentication Using Role (owner, cashier)
 - Manage Branch
 - Manage Menu
@@ -12,6 +12,10 @@ RetAs is an application for food retail which is easy to use. And for those who 
 - Manage Users ( In Development )
 - Manage Application ( In Development )
 - ReTas Mobile Application ( In Development)
+
+# Modular Feature
+Because this application is a modular system, you can set the module that you just only need without having to much trouble. 
+This modular system is based on package `nWidart/laravel-modules`. You can disable or enable the module with reading at the [documentation](https://nwidart.com/laravel-modules/v4/introduction).
 
 # How To Use Application
 - You'll need to login as owner first default email `rymetutor@gmail.com` and password `123456`
