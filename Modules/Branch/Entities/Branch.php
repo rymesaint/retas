@@ -10,6 +10,7 @@ class Branch extends Model
 {
     protected $fillable = [
         'branchName',
+        'branchCode',
         'location',
         'manager',
         'percentagePrice',

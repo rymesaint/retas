@@ -1,0 +1,25 @@
+{
+    "name": "retas/order",
+    "description": "",
+    "authors": [
+        {
+            "name": "Muhamad Ridwan Fauzan",
+            "email": "rymetutor@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Order\\Providers\\OrderServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Order\\": ""
+        }
+    }
+}

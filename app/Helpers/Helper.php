@@ -82,7 +82,7 @@ if(!function_exists('menusOwner')) {
         array_push($listNavigation, new App\Models\Navigation('Dashboard', 'dashboard', route('dashboard'), isActiveRoute('dashboard')));
 
         if(checkModule('Order') && checkModule('Menu') && checkModule('Branch')) {
-            array_push($listNavigation, new App\Models\Navigation('Manage Order', 'shopping_basket', route('dashboard'), isActiveRoute('dashboard')));
+            array_push($listNavigation, new App\Models\Navigation('Manage Order', 'shopping_basket', route('order'), isActiveRoute('order')));
         }
 
         if(checkModule('Menu') && checkModule('Branch')) {
@@ -105,12 +105,13 @@ if(!function_exists('menusOwner')) {
             array_push($listNavigation, new App\Models\Navigation('Manage Branch', 'store_mall_directory', route('branch'), isActiveRoute('branch')));
         }
 
-        if(checkModule('Report') && checkModule('Order')) {
+        if(checkModule('Order')) {
             array_push($listNavigation,
                 new App\Models\Navigation('Reports', 'assessment', null,
                 '#',
                 true,
                 [
+                    new App\Models\Navigation('Order History', null, route('order.history'), isActiveRoute('order.history')),
                     new App\Models\Navigation('Report Sales', null, '#')
                 ]
             ));

@@ -24,7 +24,7 @@ class BranchMenu extends Model
     public function menu()
     {
         if(checkModule('Menu')) {
-            return $this->belongsTo(Menu::class, 'menu_id');
+            return $this->belongsTo(Menu::class, 'menu_id')->select('id', 'name');
         }
         return null;
     }

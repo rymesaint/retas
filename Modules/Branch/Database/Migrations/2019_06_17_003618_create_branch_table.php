@@ -16,6 +16,7 @@ class CreateBranchTable extends Migration
         Schema::create('branches', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('branchName');
+            $table->string('branchCode');
             $table->string('location')->nullable();
             $table->unsignedBigInteger('manager')->nullable();
             $table->integer('percentagePrice')->nullable()->default(0);
